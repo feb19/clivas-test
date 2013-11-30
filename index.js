@@ -1,6 +1,5 @@
 var clivas = require('clivas');
 var paint = require('paint');
-
 var frame = 0;
 var width = 0;
 
