@@ -4,6 +4,15 @@ var paint = require('paint');
 var frame = 0;
 var width = 0;
 
+clivas.flush(false);
+clivas.cursor(false);
+
+'black white blue yellow green magenta'.split(' ').forEach(function(color, i) {
+    console.log(i);
+    console.log(color);
+    clivas.alias('color-'+i, '2+inverse+'+color);
+});
+
 var draw = function() {
     clivas.clear();
     clivas.line('hello world (#frame '+frame+')');
